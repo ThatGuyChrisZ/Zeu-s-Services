@@ -1,0 +1,66 @@
+body{}.background{
+background-image: url("https://media.giphy.com/media/xT8qBhrlNooHBYR9f2/giphy.gif");
+background-position: 5%;
+background-size: 50%;
+z-index:-2;
+position: fixed;
+width: 100%;
+Height:100%;
+background-repeat: norepeat;
+Top:0px;
+
+}
+body{}.background2{
+background-color: rgb(34, 9, 34);
+z-index:-1;
+position: fixed;
+width: 65%;
+Height:100%;
+top: 0px;
+left: 15%;
+color: whitesmoke;
+text-align: Center;
+padding: 5%;
+
+}
+body{}.background3{
+
+z-index:-1;
+position: fixed;
+width: 65%;
+Height:100%;
+top: 0px;
+left: 15%;
+color: whitesmoke;
+text-align: left;
+padding: 5%;
+overflow-y: scroll;
+
+
+word-wrap: break-word;
+}
+bodY{}.init{
+  white-space: initial;
+}
+bodY{}.heading1{
+  background-color: red;
+  border-radius: 25px;
+  padding: 7px;
+  z-index: 4;
+  
+}
+bodY{}.body1{
+  background-color: rgb(218, 212, 205);
+  border-radius: 25px;
+  padding: 7px;
+  z-index: 2;
+  
+}
+body{}.tb1{
+border-color: whitesmoke;
+border-radius: 5px;
+border: 3px;
+}
+table, th, td {
+  border: 1px solid whitesmoke;
+}

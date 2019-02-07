@@ -1,0 +1,89 @@
+body{
+  background-repeat: repeat;
+   background-image: url("https://cdn.discordapp.com/attachments/542482666755457045/542572135550550046/unknown.png");
+}
+body{}.head{
+  
+  position: fixed;
+  z-index: 0;
+   left: 0%;
+   top: 10%;
+   
+   
+   
+   
+}
+
+body{}.p1{
+ text-align: center;
+  Width:100%;
+  Height: 35%;
+  Top: 60%;
+  left: -1%;
+  z-index: 1;
+  position: fixed;
+   
+}
+body{}.icon1{
+  top: 75%;
+  position: fixed;
+  Left: 45%;
+  border-radius: 45px;
+ background-color:#FF3B3f;
+ width:65px;
+ height: 65px;
+ padding: 10px;
+}
+body{}.icon2{
+  top: 72%;
+  position: fixed;
+  Left: 16%;
+  width: 55px;
+  height: 55px;
+  padding: 15px;
+  border-radius: 65px;
+  background-color:#FF3B3f;
+  
+  
+  
+}
+body{}.icon3{
+  top: 72%;
+  position: fixed;
+  Left: 75%;
+  width: 80px;
+  height: 80px;
+  border-radius: 65px;
+  background-color:#FF3B3f;
+}
+body{}.p2{
+ text-align: center;
+  Width:25%;
+  Height: 35%;
+  Top: 85%;
+  left: 7%;
+  z-index: 1;
+  position: fixed;
+   
+}
+body{}.p3{
+ text-align: center;
+  Width:55%;
+  Height: 35%;
+  Top: 88%;
+  left: 21%;
+  z-index: 1;
+  position: fixed;
+   
+}
+body{}.p4{
+ text-align: center;
+  Width:55%;
+  Height: 35%;
+  Top: 84%;
+  left: 50%;
+  z-index: 1;
+  position: fixed;
+   
+}
+
