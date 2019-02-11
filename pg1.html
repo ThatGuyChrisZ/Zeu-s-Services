@@ -23,7 +23,8 @@
       <font size = "12">About Zeus: </font></center>
 
       <font size = "6" style = "text-align: left" class = "init"> Zeus is a discord servers where you can find hobbyists selling their work for free to you. There is a slight form of "currency" which will allow you to aquire these services. This currency conssists of inviting new members to the server. You don't need to invite many people to see the rewards. All rewards are easily attainable and worth the invites.  </font>
-      <Center><iframe src="https://discordapp.com/widget?id=531553469086302210&theme=dark" width="50%" height="200" allowtransparency="true" frameborder="0"></iframe></center>
+      
+      <Center><font size = "8" id = "fillme"> </font></center>
       
       <center><font size = "12">Rewards: </font></center>
 
@@ -121,7 +122,9 @@ xhttp.onreadystatechange = function() { if (this.readyState == 4 && this.status 
      var fix = this.responseText;
   var decompile = fix.split("|")
      console.log(fix);
-  console.log(decompile)
+  console.log(decompile);
+  document.getElementById("fillme").innerhtml = decompile;
+
      
     
      
