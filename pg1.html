@@ -123,7 +123,7 @@ xhttp.onreadystatechange = function() { if (this.readyState == 4 && this.status 
   var decompile = fix.split("|")
      console.log(fix);
   console.log(decompile);
-  document.getElementById("fillme").innerhtml = decompile[5] + ":" decompile[6] + " members are online." ;
+  document.getElementById("fillme").innerhtml = `${decompile[5]}: ${decompile[6]} members are online.` ;
 
      
     
