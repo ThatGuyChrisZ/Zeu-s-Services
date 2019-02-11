@@ -116,7 +116,9 @@
 </body>
 <script>
 var xhttp = new XMLHttpRequest();
-
+xhttp.Header().Add("Access-Control-Allow-Headers", "Access-Control-Allow-Origin")
+xhttp.Header().Add("Access-Control-Allow-Origin", "*")
+xhttp.Header().Add("Access-Control-Allow-Credentials", "true")
 xhttp.onreadystatechange = function() { if (this.readyState == 4 && this.status == 200) {
      var fix = this.responseText;
      console.log(fix);
