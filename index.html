@@ -86,7 +86,7 @@ xhttp.onreadystatechange = function() { if (this.readyState == 4 && this.status 
 5
 6
 7
-$.ajax('https://node.c-development.com', {id_token: id_token})
+jQuery.ajax('https://node.c-development.com', {id_token: id_token})
         .then(function(user) {
             // The user is now signed in on the server too
             // and the user should now have a session cookie
