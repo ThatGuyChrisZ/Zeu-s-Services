@@ -62,6 +62,25 @@ xhttp.onreadystatechange = function() { if (this.readyState == 4 && this.status 
     
    
 </script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "content": {
+    "message": "This website uses session cookies for authentication purposes. By selecting agree you accept the use of this cookie.",
+    "dismiss": "Agree",
+    "link": "What is a cookie?"
+  }
+})});
+</script>
 
 
   </html>
