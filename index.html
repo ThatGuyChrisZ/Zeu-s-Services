@@ -6,6 +6,9 @@
     <title>C-Development</title>
     <link href="pg2.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="114104587533-0tf776p9i2tul9sl4l32o5pnri15aq16.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
 <body class = "background">
   <p class = "background2">
@@ -59,7 +62,31 @@ xhttp.onreadystatechange = function() { if (this.readyState == 4 && this.status 
   };
   xhttp.open( "GET", "https://discordapp.com/widget?id=531553469086302210&theme=dark", true ) // false for synchronous request
   xhttp.send();
-    
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+      
+        var id_token = googleUser.getAuthResponse().id_token;
+        postAJAX('https://node.c-development.com', {id_token: id_token})
+        .then(function(user) {
+            // The user is now signed in on the server too
+            // and the user should now have a session cookie
+            // for the whole site. 
+            document.location.href = '/dev_redirect/dev.html/'
+        })
+        
+        
+      };
+    </script>
    
 </script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
