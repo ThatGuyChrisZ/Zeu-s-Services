@@ -11,8 +11,8 @@
   </head>
   <script>
   
-  document.cookie.indexOf(devCookie)
-  $.post('https://node.c-development.com', {cookie: document.cookie.indexOf(devCookie)})
+  document.cookie.indexOf("devCookie")
+  $.post('https://node.c-development.com', {cookie: document.cookie.indexOf("devCookie")})
         .then(function(user) {
             
   console.log(user)
