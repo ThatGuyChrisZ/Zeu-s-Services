@@ -14,7 +14,7 @@
   document.cookie.indexOf("devCookie")
   $.post('https://node.c-development.com', {cookie: document.cookie.indexOf("devCookie")})
         .then(function(user) {
-            
+            document.write(user)
   console.log(user)
   })
   </script>
