@@ -1,0 +1,20 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>C-Development</title>
+    <link href="dev.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="114104587533-0tf776p9i2tul9sl4l32o5pnri15aq16.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </head>
+  <script>
+  
+  document.cookie.indexOf(devCookie)
+  $.post('https://node.c-development.com', {cookie: document.cookie.indexOf(devCookie)})
+        .then(function(user) {
+            
+  console.log(user)
+  })
+  </script>
