@@ -13,16 +13,15 @@
    
    </body>
    <script>
-   var inp = document.getElementById("get-files");
-   console.log("loaded")
-   for(i=0; i< inp.files.length; i++){
-   let file = inp.files[i]
-   console.log(i)
-   console.log(file)
-   }
-   
-   
-   
-   
+   $(function () {
+$.get('https://github.com/ThatGuyChrisZ/Zeu-s-Services/tree/master/blog', function (response) {
+var source = $('
+' + response + '
+');
+$('#files js-navigation-container js-active-navigation-container').html(source),function(responce2){
+console.log(responce2)
+});
+});
+});
    </script>
 </html>
