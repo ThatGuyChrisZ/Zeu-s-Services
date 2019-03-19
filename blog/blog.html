@@ -14,7 +14,7 @@
    </body>
    <script>
 $(function () {
-$.get('https://github.com/ThatGuyChrisZ/Zeu-s-Services/tree/master/blog', function (response) {
+$.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-s-Services/blob/master/blog', function (response) {
 var source = $(`${response}`);
 $('#files js-navigation-container js-active-navigation-container').html(source),function(responce2){
 console.log(responce2)
