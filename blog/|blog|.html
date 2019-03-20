@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
    </head>
    <body>
-   <input type="file" name="client-file" id="get-files" multiple />
+   
    
    </body>
    <script>
@@ -28,6 +28,10 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
 
 });
   console.log(filtered)
+  filtered.foreach(function(element){
+    var newDiv = document.createElement("iframe");
+    newDiv.src = element
+  })
 });
 });
    
