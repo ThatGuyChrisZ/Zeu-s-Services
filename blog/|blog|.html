@@ -24,7 +24,7 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
   var prep1  = trimmed.split(" ")
   var filtered = prep1.filter(function(value, index, arr){
 
-    return value !== ""||"↵";
+    return value.includes(".txt")
 
 });
   console.log(filtered)
