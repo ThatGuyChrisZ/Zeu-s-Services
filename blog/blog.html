@@ -20,7 +20,8 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
 //console.log(responce2)
 //}});
   var cleanText = response.replace(/<\/?[^>]+(>|$)/g, "");
-  console.log(cleanText)
+  var trimmed = cleanText.trim()
+  console.log(trimmed)
 });
 });
    </script>
