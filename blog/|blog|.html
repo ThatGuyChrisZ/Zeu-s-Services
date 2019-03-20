@@ -28,7 +28,7 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
 
 });
   console.log(filtered)
-  filtered.foreach(function(element){
+  filtered.forEach(function(element){
     var newDiv = document.createElement("iframe");
     newDiv.src = element
   })
