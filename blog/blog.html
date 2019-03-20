@@ -19,7 +19,8 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
 //$('#files js-navigation-container js-active-navigation-container').html(source),function(responce2){
 //console.log(responce2)
 //}});
-  console.log(response)
+  var cleanText = response.replace(/<\/?[^>]+(>|$)/g, "");
+  console.log(cleanText)
 });
 });
    </script>
