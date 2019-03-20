@@ -22,7 +22,12 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
   var cleanText = response.replace(/<\/?[^>]+(>|$)/g, "");
   var trimmed = cleanText.trim()
   var prep1  = trimmed.split(" ")
-  console.log(prep1)
+  var filtered = prep1.filter(function(value, index, arr){
+
+    return value !== "";
+
+});
+  console.log(filter)
 });
 });
    
