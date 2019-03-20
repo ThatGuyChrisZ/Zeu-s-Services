@@ -21,6 +21,7 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
 //}});
   var cleanText = response.replace(/<\/?[^>]+(>|$)/g, "");
   var trimmed = cleanText.trim()
+  var prep1  = trimmed.split("   ")
   console.log(trimmed)
 });
 });
