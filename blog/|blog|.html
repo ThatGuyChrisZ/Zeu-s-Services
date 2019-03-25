@@ -31,9 +31,11 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
   console.log(filtered)
   filtered.forEach(function(element){
     var newDiv = document.createElement("iframe");
+    var newbr = document.createElement("br");
     newDiv.src = element
     var currentDiv = document.getElementById("div1"); 
   document.body.insertBefore(newDiv, currentDiv);
+    document.body.insertBefore(newbr, currentDiv);
   })
 });
 });
