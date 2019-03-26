@@ -45,20 +45,14 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
     var currentDiv = document.getElementById("div1"); 
   document.body.insertBefore(newDiv, currentDiv);
     document.body.insertBefore(newbr, currentDiv);
-    document.getElementById(`${i}`).contentWindow.document.body.style = "color: #ffffff";
-    fixit(`${i}`)
+    document.getElementById(`${i}`).contentWindow.document.body.style.color = "#ffffff";
+    
     console.log(document.getElementById(`${i}`).contentWindow.document.body.style = "color: #ffffff")
     
 });
 });
   })
-     function fixit(element){
-     setTimeout(editit(element),300)
-       function editit(element2){
-         document.getElementById(`${element2}`).contentWindow.document.body.style = "color: #ffffff";
-       console.log(element2);
-       }
-     }
+    
    
    
    
