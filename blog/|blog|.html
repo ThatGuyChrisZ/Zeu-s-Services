@@ -29,11 +29,15 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
 
 });
   console.log(filtered)
+  var i = 0;
   filtered.forEach(function(element){
+    i++
     var newDiv = document.createElement("iframe");
     var newbr = document.createElement("br");
+    
     newDiv.src = element
     newDiv.class = "blogs"
+    newDiv.id = `${i}`
     newDiv.width = "50%"
     newDiv.style = "left:25%; display:block; margin: auto; background-color: rgb(55, 55, 55); color: #ffffff"
     newDiv.body.style="color: #ffffff"
@@ -41,6 +45,7 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
     var currentDiv = document.getElementById("div1"); 
   document.body.insertBefore(newDiv, currentDiv);
     document.body.insertBefore(newbr, currentDiv);
+    document.getElementById(`${i}`).contentWindow.document.body.innerHTML;
   })
 });
 });
