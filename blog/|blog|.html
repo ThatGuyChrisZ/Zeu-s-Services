@@ -39,7 +39,7 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
     newDiv.class = "blogs"
     newDiv.id = `${i}`
     newDiv.width = "50%"
-    newDiv.style = "left:25%; display:block; margin: auto; background-color: rgb(55, 55, 55); color: #ffffff"
+    newDiv.style = "left:25%; display:block; margin: auto; background-color: rgb(55, 55, 55); color: #ffffff";
     
     
     var currentDiv = document.getElementById("div1"); 
@@ -50,7 +50,7 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
       resolve("finished")
       newDiv.onload = function () {
         var body = newDiv.contentWindow.document.querySelector('body');
-        body.style.color = "#ffffff"
+        body.style = "color: #ffffff; text-shadow: 3px 3px 5px #ffffff;"
         
     };
 });
