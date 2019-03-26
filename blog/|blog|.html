@@ -49,7 +49,7 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
       console.log("ending")
       resolve("finished")
       newDiv.onload = function () {
-        var body = frame.contentWindow.document.querySelector('body');
+        var body = newDiv.contentWindow.document.querySelector('body');
         body.style.color = "#ffffff"
         
     };
