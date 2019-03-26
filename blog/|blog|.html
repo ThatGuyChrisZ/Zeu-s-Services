@@ -43,12 +43,19 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
     
     
     var currentDiv = document.getElementById("div1"); 
+    var promise1 = new Promise(function(resolve, reject) {
+  document.body.insertBefore(newDiv, currentDiv);
+    document.body.insertBefore(newbr, currentDiv);
+      console.log("ending")
+      resolve("finished")
+});
+    promise1.then(ended =>{
   document.body.insertBefore(newDiv, currentDiv);
     document.body.insertBefore(newbr, currentDiv);
     document.getElementById(`${i}`).contentWindow.document.body.style.color = "#ffffff";
     
     console.log(document.getElementById(`${i}`).contentWindow.document.body.style = "color: #ffffff")
-    
+  })
 });
 });
   })
