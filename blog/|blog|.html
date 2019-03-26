@@ -40,13 +40,12 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
     newDiv.id = `${i}`
     newDiv.width = "50%"
     newDiv.style = "left:25%; display:block; margin: auto; background-color: rgb(55, 55, 55); color: #ffffff"
-    newDiv.body.style="color: #ffffff"
+    
     
     var currentDiv = document.getElementById("div1"); 
   document.body.insertBefore(newDiv, currentDiv);
     document.body.insertBefore(newbr, currentDiv);
-    document.getElementById(`${i}`).contentWindow.document.body.innerHTML;
-  })
+    document.getElementById(`${i}`).contentWindow.document.body.style = "color: #ffffff"
 });
 });
    
