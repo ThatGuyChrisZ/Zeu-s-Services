@@ -48,10 +48,14 @@ $.get('https://cors-anywhere.herokuapp.com/https://github.com/ThatGuyChrisZ/Zeu-
     document.body.insertBefore(newbr, currentDiv);
       console.log("ending")
       resolve("finished")
+      newDiv.onload = function () {
+        var body = frame.contentWindow.document.querySelector('body');
+        body.style.color = "#ffffff"
+        
+    };
 });
     promise1.then(ended =>{
-  document.body.insertBefore(newDiv, currentDiv);
-    document.body.insertBefore(newbr, currentDiv);
+  
     document.getElementById(`${i}`).contentWindow.document.body.style.color = "#ffffff";
     
     console.log(document.getElementById(`${i}`).contentWindow.document.body.style = "color: #ffffff")
